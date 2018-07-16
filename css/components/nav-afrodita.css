@@ -1,0 +1,160 @@
+/* Sidebar */
+
+.sidebar {
+  width: 180px;
+  margin: 0;
+  margin-left: -43px;
+  margin-top: 31px;
+  margin-right: 41px;
+}
+
+.menu__list {
+  list-style: none;
+}
+
+.menu {
+  display: block;
+}
+
+.menu__item {
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.menu__link {
+  text-decoration: none;
+  margin-bottom: 25px;
+  color: #f89513;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  display: inline-block;
+  max-width: 160px;
+  overflow: hidden;
+  margin-left: 37px;
+  transition: color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+}
+
+.menu__link:hover {
+  color: #221f1f;
+}
+
+.menu__link:active {
+  color: #221f1f;
+}
+
+.menu__link:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 18px;
+  background: url('../../images/icons/navigation.png') 0 0 no-repeat;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-out;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+}
+
+.menu__link:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 17px;
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: url('../../images/icons/navigation.png') 0 0 no-repeat;
+  transition: opacity 0.5s ease-out;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+}
+
+/*main*/
+
+.menu__link--main:before {
+  background-position: 0 bottom;
+  opacity: 1;
+}
+
+.menu__link--main:after {
+  background-position: 0 0;
+  opacity: 0;
+}
+
+.menu__link--main:hover:before {
+  opacity: 0;
+}
+
+.menu__link--main:hover:after {
+  opacity: 1;
+}
+
+/*services*/
+
+.menu__link--services:before {
+  background-position: -100px bottom;
+  opacity: 1;
+}
+
+.menu__link--services:after {
+  background-position: -100px 0;
+  opacity: 0;
+}
+
+.menu__link--services:hover:before {
+  opacity: 0;
+}
+
+.menu__link--services:hover:after {
+  opacity: 1;
+}
+
+/*comments*/
+
+.menu__link--comments:before {
+  background-position: -200px bottom;
+  opacity: 1;
+}
+
+.menu__link--comments:after {
+  background-position: -200px 0;
+  opacity: 0;
+}
+
+.menu__link--comments:hover:before {
+  opacity: 0;
+}
+
+.menu__link--comments:hover:after {
+  opacity: 1;
+}
+
+/*active description*/
+
+.menu__link.menu__link--active {
+  color: #221f1f;
+}
+
+.menu__link--main.menu__link--active:before {
+  background-position: 0 0;
+  opacity: 1;
+}
+
+.menu__link--services.menu__link--active:before {
+  background-position: -100px 0;
+  opacity: 1;
+}
+
+.menu__link--comments.menu__link--active:before {
+  background-position: -200px 0;
+  opacity: 1;
+}

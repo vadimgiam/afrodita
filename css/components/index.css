@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(../../fonts/OpenSans-Bold.woff) format('woff');
+    font-weight: 300;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: block;
+
+
+}
+
+.wrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../images/background.jpg) ;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+
+}
+.wrapper::after{
+    width: 100vw;
+    height: 100vh;
+background-color:black;
+}
+
+.afrodita__start{
+position: absolute;
+left:45%;
+top: 40%;
+}
+
+.afrodita__start__logo{
+    margin: 0px auto;
+    padding-bottom: 42px;
+    width: 160px;
+    height: 193px;
+}
+
+
+  .afrodita__start__btn{
+
+background-color: #f89513;
+border:#f89513;
+border-radius: 3px;
+display: block;
+padding: 12px 12px;
+text-decoration:none;
+color:white;
+font-family: "OpenSans-Bold";
+font-weight: bold;
+text-transform: uppercase;
+font-size: 12px;
+letter-spacing: 1px;
+text-align: center;
+box-sizing: border-box;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+}
+
+.afrodita__start__btn:hover{
+    background-color: #131415;
+
+         }
